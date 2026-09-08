@@ -6,17 +6,15 @@
     <meta name="theme-color" content="#020711">
     <meta name="description" content="SAYODA — السيد حسن | تصميم وبرمجة وهوية رقمية">
 
-    <!-- Open Graph (تحسين المشاركة) -->
-    <meta property="og:title" content="SAYODA | السيد حسن">
-    <meta property="og:description" content="تصميم • برمجة • إبداع رقمي">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://elsayedhasaneisa1-collab.github.io/My-work-website-/">
-    <meta property="og:image" content="logo.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <title>SAYODA | السيد حسن</title>
+<!-- Open Graph -->
+<meta property="og:title" content="SAYODA | السيد حسن">
+<meta property="og:description" content="تصميم • برمجة • إبداع رقمي">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://elsayedhasaneisa1-collab.github.io/My-work-website-/">
+<meta property="og:image" content="sayed.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -30,7 +28,7 @@
 <body>
 
     <!-- =============================================
-    INTRO (شاشة البداية)
+    INTRO (شاشة البداية مع تأثير الكتابة)
     ============================================= -->
     <div class="intro" id="intro">
         <div class="intro-box">
@@ -43,11 +41,9 @@
                 <span class="window-title">SAYODA_SYSTEM</span>
             </div>
             <div class="intro-content">
-                <div class="terminal-line"><span>&gt;</span> تشغيل النظام...</div>
-                <div class="terminal-line"><span>&gt;</span> تحميل الهوية الرقمية...</div>
-                <div class="terminal-line"><span>&gt;</span> فحص المكونات...</div>
-                <div class="terminal-line"><span>&gt;</span> تجهيز المعرض...</div>
-                <div class="terminal-success"><span>&gt;</span> تم السماح بالدخول ✓</div>
+                <div id="terminalLines">
+                    <!-- الأسطر هتظهر هنا بتأثير الكتابة -->
+                </div>
                 <button class="enter-button" id="enterBtn" type="button">
                     دخول إلى الموقع
                     <i class="fa-solid fa-arrow-left"></i>
@@ -57,7 +53,7 @@
     </div>
 
     <!-- =============================================
-    NAVBAR (شريط التنقل)
+    NAVBAR
     ============================================= -->
     <header class="navbar">
         <a href="#home" class="brand" aria-label="الرئيسية">
@@ -79,12 +75,12 @@
     </header>
 
     <!-- =============================================
-    MAIN CONTENT (المحتوى الرئيسي)
+    MAIN CONTENT
     ============================================= -->
     <main id="mainContent">
 
         <!-- =========================================
-        HERO (القسم الرئيسي)
+        HERO
         ========================================= -->
         <section class="hero" id="home">
             <div class="hero-bg-glow"></div>
@@ -131,7 +127,7 @@
         </section>
 
         <!-- =========================================
-        ABOUT (عني)
+        ABOUT
         ========================================= -->
         <section class="section" id="about">
             <div class="section-header">
@@ -193,7 +189,7 @@
         </section>
 
         <!-- =========================================
-        GALLERY (معرض الأعمال)
+        GALLERY
         ========================================= -->
         <section class="section gallery-section" id="gallery">
             <div class="section-header">
@@ -251,7 +247,7 @@
         </section>
 
         <!-- =========================================
-        SKILLS (المهارات)
+        SKILLS
         ========================================= -->
         <section class="section" id="skills">
             <div class="section-header">
@@ -290,7 +286,7 @@
         </section>
 
         <!-- =========================================
-        DESIGN REQUEST (طلب تصميم)
+        DESIGN REQUEST
         ========================================= -->
         <section class="section" id="design">
             <div class="section-header">
@@ -352,7 +348,7 @@
         </section>
 
         <!-- =========================================
-        CONTACT (التواصل)
+        CONTACT
         ========================================= -->
         <section class="section" id="contact">
             <div class="section-header">
@@ -398,7 +394,7 @@
     </main>
 
     <!-- =============================================
-    LIGHTBOX (عرض الصور بتفاصيل أكبر)
+    LIGHTBOX
     ============================================= -->
     <div class="lightbox" id="lightbox" aria-hidden="true">
         <button type="button" class="lightbox-close" id="closeLightbox" aria-label="إغلاق">
@@ -417,7 +413,7 @@
     </div>
 
     <!-- =============================================
-    FOOTER (تذييل الصفحة)
+    FOOTER
     ============================================= -->
     <footer class="footer">
         <div class="footer-brand">SAYODA</div>
@@ -426,7 +422,7 @@
     </footer>
 
     <!-- =============================================
-    SCRIPTS (كود الجافا سكريبت)
+    SCRIPTS
     ============================================= -->
     <script>
         // ============================================================
@@ -435,7 +431,78 @@
         const WHATSAPP_NUMBER = "201041254010";
 
         // ============================================================
-        //  1. INTRO (شاشة البداية)
+        //  1. TERMINAL TYPING EFFECT (تأثير الكتابة)
+        // ============================================================
+        (function initTerminal() {
+            const terminalLines = document.getElementById('terminalLines');
+            
+            const lines = [
+                { text: '> تشغيل النظام...', delay: 300 },
+                { text: '> تحميل الهوية الرقمية...', delay: 400 },
+                { text: '> فحص المكونات...', delay: 350 },
+                { text: '> تجهيز المعرض...', delay: 300 },
+                { text: '> تم السماح بالدخول ✓', delay: 500, success: true }
+            ];
+
+            let lineIndex = 0;
+            let charIndex = 0;
+            let currentElement = null;
+
+            function createLine() {
+                const div = document.createElement('div');
+                div.className = 'terminal-line';
+                if (lines[lineIndex].success) {
+                    div.classList.add('terminal-success');
+                }
+                div.innerHTML = '<span>&gt;</span> ';
+                terminalLines.appendChild(div);
+                return div;
+            }
+
+            function typeNextChar() {
+                if (lineIndex >= lines.length) {
+                    const cursor = document.createElement('span');
+                    cursor.className = 'terminal-cursor';
+                    cursor.textContent = '█';
+                    terminalLines.appendChild(cursor);
+                    return;
+                }
+
+                if (!currentElement) {
+                    currentElement = createLine();
+                    charIndex = 0;
+                }
+
+                const currentLine = lines[lineIndex];
+                const text = currentLine.text;
+
+                if (charIndex < text.length) {
+                    const span = document.createElement('span');
+                    span.textContent = text[charIndex];
+                    span.style.opacity = '0';
+                    currentElement.appendChild(span);
+                    
+                    requestAnimationFrame(() => {
+                        span.style.transition = 'opacity 0.05s';
+                        span.style.opacity = '1';
+                    });
+
+                    charIndex++;
+                    const speed = 30 + Math.random() * 40;
+                    setTimeout(typeNextChar, speed);
+                } else {
+                    currentElement = null;
+                    lineIndex++;
+                    const pause = currentLine.success ? 600 : 200;
+                    setTimeout(typeNextChar, pause);
+                }
+            }
+
+            setTimeout(typeNextChar, 500);
+        })();
+
+        // ============================================================
+        //  2. INTRO BUTTON
         // ============================================================
         (function initIntro() {
             const intro = document.getElementById('intro');
@@ -452,10 +519,9 @@
         })();
 
         // ============================================================
-        //  2. IMAGE PROTECTION (حماية الصور)
+        //  3. IMAGE PROTECTION
         // ============================================================
         (function protectImages() {
-            // منع النقر بزر الفأرة الأيمن
             document.addEventListener('contextmenu', (e) => {
                 if (e.target.tagName === 'IMG' ||
                     e.target.closest('.gallery-stage') ||
@@ -465,14 +531,12 @@
                 }
             });
 
-            // منع السحب
             document.addEventListener('dragstart', (e) => {
                 if (e.target.tagName === 'IMG') {
                     e.preventDefault();
                 }
             });
 
-            // منع التحديد
             document.addEventListener('selectstart', (e) => {
                 if (e.target.tagName === 'IMG' ||
                     e.target.closest('.gallery-stage') ||
@@ -481,7 +545,6 @@
                 }
             });
 
-            // منع اختصارات حفظ الصفحة
             document.addEventListener('keydown', (e) => {
                 const key = e.key.toLowerCase();
                 if ((e.ctrlKey || e.metaKey) && (key === 's' || key === 'u' || key === 'p')) {
@@ -491,7 +554,7 @@
         })();
 
         // ============================================================
-        //  3. GALLERY (معرض الصور)
+        //  4. GALLERY
         // ============================================================
         (function initGallery() {
             const galleryStage = document.getElementById('galleryStage');
@@ -506,7 +569,6 @@
             let autoPlaying = false;
             let autoTimer = null;
 
-            // تحميل الصور من ملف JSON
             async function loadImages() {
                 try {
                     const response = await fetch('images.json', { cache: 'no-store' });
@@ -529,7 +591,6 @@
                 }
             }
 
-            // إنشاء الصور المصغرة
             function createThumbnails() {
                 thumbnails.innerHTML = '';
                 images.forEach((image, index) => {
@@ -546,7 +607,6 @@
                 });
             }
 
-            // عرض الصورة
             function showImage(index) {
                 if (!images.length) return;
                 if (index < 0) index = images.length - 1;
@@ -569,18 +629,15 @@
                     thumb.classList.toggle('active', idx === currentIndex);
                 });
 
-                // تمرير الصورة المصغرة إلى وسط العرض
                 const active = document.querySelector(`.thumbnail[data-index="${currentIndex}"]`);
                 if (active) {
                     active.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
                 }
             }
 
-            // أحداث الأزرار
             document.getElementById('nextImage').addEventListener('click', () => showImage(currentIndex + 1));
             document.getElementById('previousImage').addEventListener('click', () => showImage(currentIndex - 1));
 
-            // أزرار التمرير للصور المصغرة
             document.getElementById('thumbnailNext').addEventListener('click', () => {
                 thumbnails.scrollBy({ left: -300, behavior: 'smooth' });
             });
@@ -588,7 +645,6 @@
                 thumbnails.scrollBy({ left: 300, behavior: 'smooth' });
             });
 
-            // التشغيل التلقائي
             const autoplayBtn = document.getElementById('autoplay');
             autoplayBtn.addEventListener('click', () => {
                 autoPlaying = !autoPlaying;
@@ -601,7 +657,6 @@
                 }
             });
 
-            // السحب باللمس
             let touchStartX = 0;
             galleryStage.addEventListener('touchstart', (e) => {
                 touchStartX = e.changedTouches[0].screenX;
@@ -612,7 +667,6 @@
                 showImage(distance > 0 ? currentIndex + 1 : currentIndex - 1);
             }, { passive: true });
 
-            // Lightbox
             const lightbox = document.getElementById('lightbox');
             const lightboxImage = document.getElementById('lightboxImage');
             const lightboxCounter = document.getElementById('lightboxCounter');
@@ -655,7 +709,6 @@
             });
             lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
 
-            // مفاتيح لوحة المفاتيح
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape') closeLightbox();
                 if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
@@ -665,12 +718,11 @@
                 }
             });
 
-            // بدء التحميل
             loadImages();
         })();
 
         // ============================================================
-        //  4. DESIGN REQUEST (طلب التصميم عبر واتساب)
+        //  5. DESIGN REQUEST
         // ============================================================
         (function initDesignForm() {
             document.getElementById('designForm').addEventListener('submit', (e) => {
@@ -686,7 +738,7 @@
         })();
 
         // ============================================================
-        //  5. SMOOTH SCROLL (تمرير سلس للروابط الداخلية)
+        //  6. SMOOTH SCROLL
         // ============================================================
         (function initSmoothScroll() {
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
