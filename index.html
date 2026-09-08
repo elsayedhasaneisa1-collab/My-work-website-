@@ -1,388 +1,1635 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
 
-  <title>SAYODA — Digital Identity</title>
+    <title>SAYODA | الهوية الرقمية</title>
 
-  <meta name="description"
-        content="SAYODA — Digital Identity | EL-SAYED HASAN">
+    <meta
+        name="description"
+        content="SAYODA — الهوية الرقمية والتصميم والبرمجة"
+    >
 
-  <!-- Open Graph -->
-  <meta property="og:title"
-        content="SAYODA — Digital Identity">
+    <!-- صورة مشاركة الرابط -->
+    <meta property="og:title" content="SAYODA | الهوية الرقمية">
+    <meta property="og:description" content="تصميم • برمجة • إبداع رقمي">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.png">
 
-  <meta property="og:description"
-        content="SAYODA | Digital Identity — EL-SAYED HASAN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SAYODA | الهوية الرقمية">
+    <meta name="twitter:description" content="تصميم • برمجة • إبداع رقمي">
+    <meta name="twitter:image" content="logo.png">
 
-  <meta property="og:type"
-        content="website">
+    <!-- أيقونات Font Awesome من الإنترنت -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 
-  <meta property="og:image"
-        content="logo.png">
-
-  <meta property="og:image:alt"
-        content="SAYODA Digital Identity">
-
-  <!-- Twitter / X -->
-  <meta name="twitter:card"
-        content="summary_large_image">
-
-  <meta name="twitter:title"
-        content="SAYODA — Digital Identity">
-
-  <meta name="twitter:description"
-        content="SAYODA | Digital Identity — EL-SAYED HASAN">
-
-  <meta name="twitter:image"
-        content="logo.png">
-
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Background -->
-  <div class="background-grid"></div>
-  <div class="noise"></div>
+<!-- =========================
+     طبقة الحماية
+========================= -->
 
-  <!-- Intro -->
-  <div class="intro" id="intro">
+<div class="security-layer"></div>
+
+
+<!-- =========================
+     شاشة الترمينال
+========================= -->
+
+<div class="intro" id="intro">
 
     <div class="terminal">
-      <div class="terminal-top">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
 
-      <div class="terminal-body">
-        <p>&gt; initializing SAYODA...</p>
-        <p>&gt; loading digital identity...</p>
-        <p>&gt; access granted.</p>
+        <div class="terminal-header">
 
-        <button id="enterBtn">
-          ENTER SYSTEM
-        </button>
-      </div>
-    </div>
+            <div class="terminal-buttons">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-  </div>
+            <span class="terminal-title">
+                SAYODA_SYSTEM
+            </span>
 
-
-  <!-- Main -->
-  <main id="mainContent">
-
-    <!-- HERO -->
-    <section class="hero">
-
-      <div class="hero-content">
-
-        <div class="profile-image">
-          <img src="sayed.png"
-               alt="SAYODA">
         </div>
 
-        <p class="small-title">
-          DIGITAL IDENTITY
-        </p>
+        <div class="terminal-body">
+
+            <p>&gt; تشغيل النظام...</p>
+            <p>&gt; تحميل الهوية الرقمية...</p>
+            <p>&gt; تجهيز الأعمال...</p>
+            <p>&gt; فحص الاتصال...</p>
+
+            <p class="terminal-success">
+                &gt; تم السماح بالدخول ✓
+            </p>
+
+            <button id="enterBtn">
+                دخول إلى الموقع
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar">
+
+    <a href="#" class="logo">
+
+        <span class="logo-mark">S</span>
+
+        <span class="logo-text">
+            SAYODA
+        </span>
+
+    </a>
+
+
+    <nav>
+
+        <a href="#home">الرئيسية</a>
+
+        <a href="#about">عني</a>
+
+        <a href="#gallery">أعمالي</a>
+
+        <a href="#skills">مهاراتي</a>
+
+        <a href="#design">طلب تصميم</a>
+
+        <a href="#contact">تواصل</a>
+
+    </nav>
+
+
+    <a
+        href="https://wa.me/201041254010"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="nav-whatsapp"
+    >
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        واتساب
+
+    </a>
+
+</header>
+
+
+<main id="mainContent">
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+
+        <div class="profile">
+
+            <div class="profile-border">
+
+                <div class="profile-image">
+
+                    <img
+                        src="sayed.png"
+                        alt="SAYODA"
+                        draggable="false"
+                        oncontextmenu="return false"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-label">
+            مطور • مصمم • صانع محتوى رقمي
+        </div>
+
 
         <h1>
-          SAYODA
+            SAYODA
         </h1>
 
-        <p class="hero-subtitle">
-          EL-SAYED HASAN
-        </p>
+
+        <div class="hero-name">
+            السيد حسن
+        </div>
+
 
         <p class="hero-description">
-          Welcome to my digital space.
-          Code, creativity and technology
-          combined into one identity.
+            أحوّل الأفكار إلى تجارب رقمية
+            تجمع بين البرمجة والتصميم
+            والهوية البصرية.
         </p>
+
 
         <div class="hero-buttons">
 
-          <a href="#about" class="primary-btn">
-            EXPLORE
-          </a>
+            <a
+                href="#gallery"
+                class="button primary"
+            >
+                استكشف أعمالي
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
 
-          <a href="#contact" class="secondary-btn">
-            CONTACT
-          </a>
+
+            <a
+                href="#design"
+                class="button secondary"
+            >
+                اطلب تصميم
+            </a>
 
         </div>
 
-      </div>
 
-    </section>
+        <div class="scroll-indicator">
 
+            <span></span>
 
-    <!-- ABOUT -->
-    <section class="section" id="about">
+            اسحب للأسفل
 
-      <div class="section-title">
-        <span>01</span>
-        <h2>ABOUT</h2>
-      </div>
-
-      <div class="glass-card">
-
-        <p>
-          أنا SAYODA، مهتم بالبرمجة والتكنولوجيا
-          والتصميم الرقمي وصناعة المشاريع المختلفة.
-        </p>
-
-        <p>
-          أحاول دائمًا إنشاء أفكار مختلفة
-          تجمع بين التصميم والكود والهوية الرقمية.
-        </p>
-
-      </div>
-
-    </section>
-
-
-    <!-- GALLERY -->
-    <section class="section" id="gallery">
-
-      <div class="section-title">
-        <span>02</span>
-        <h2>GALLERY</h2>
-      </div>
-
-      <div class="gallery" id="galleryContainer">
-        <!-- الصور يتم إنشاؤها تلقائيًا -->
-      </div>
-
-    </section>
-
-
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-
-      <div class="section-title">
-        <span>03</span>
-        <h2>SKILLS</h2>
-      </div>
-
-      <div class="skills-grid">
-
-        <div class="skill-card">
-          <div class="skill-number">01</div>
-          <h3>WEB DEVELOPMENT</h3>
-          <p>
-            Modern responsive websites
-            and interactive experiences.
-          </p>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-number">02</div>
-          <h3>UI / UX</h3>
-          <p>
-            Modern interfaces with
-            strong visual identity.
-          </p>
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section" id="about">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            01
+        </span>
+
+        <div>
+
+            <small>
+                الهوية
+            </small>
+
+            <h2>
+                عني
+            </h2>
+
         </div>
 
-        <div class="skill-card">
-          <div class="skill-number">03</div>
-          <h3>CYBER STYLE</h3>
-          <p>
-            Futuristic cyberpunk
-            inspired digital designs.
-          </p>
+    </div>
+
+
+    <div class="about-card">
+
+        <div class="about-icon">
+
+            <i class="fa-solid fa-fingerprint"></i>
+
         </div>
 
-        <div class="skill-card">
-          <div class="skill-number">04</div>
-          <h3>CREATIVE CODE</h3>
-          <p>
-            Turning ideas into
-            interactive digital projects.
-          </p>
+
+        <div class="about-text">
+
+            <h3>
+                مش مجرد كود أو تصميم...
+                دي بصمة.
+            </h3>
+
+            <p>
+                أعمل على صناعة تجارب رقمية
+                مختلفة تجمع بين الشكل الاحترافي
+                والأداء والهوية الخاصة.
+            </p>
+
         </div>
 
-      </div>
 
-    </section>
+        <div class="online-status">
+
+            <span></span>
+
+            النظام يعمل
+
+        </div>
+
+    </div>
+
+</section>
 
 
-    <!-- CONTACT -->
-    <section class="section" id="contact">
+<!-- =========================
+     GALLERY
+========================= -->
 
-      <div class="section-title">
-        <span>04</span>
-        <h2>CONTACT</h2>
-      </div>
+<section class="section gallery-section" id="gallery">
 
-      <div class="contact-grid">
+    <div class="section-heading">
 
-        <!-- GitHub -->
-        <a href="#"
-           target="_blank"
-           rel="noopener"
-           class="contact-card">
+        <span class="section-number">
+            02
+        </span>
 
-          <span class="contact-icon">
-            GH
-          </span>
+        <div>
 
-          <div>
-            <h3>GitHub</h3>
-            <p>View my projects ↗</p>
-          </div>
+            <small>
+                معرض الأعمال
+            </small>
+
+            <h2>
+                أعمالي
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="gallery">
+
+
+        <!-- الصورة الرئيسية -->
+
+        <div
+            class="gallery-stage"
+            id="galleryStage"
+        >
+
+            <div
+                class="gallery-loading"
+                id="galleryLoading"
+            >
+                جاري تحميل الأعمال...
+            </div>
+
+
+            <img
+                id="mainImage"
+                class="main-image"
+                src=""
+                alt="عمل من أعمال SAYODA"
+                draggable="false"
+                oncontextmenu="return false"
+            >
+
+
+            <div class="gallery-gradient"></div>
+
+
+            <div class="gallery-information">
+
+                <div>
+
+                    <span>
+                        المشروع
+                    </span>
+
+                    <strong id="imageTitle">
+                        عمل 01
+                    </strong>
+
+                </div>
+
+
+                <div
+                    id="imageCounter"
+                    class="image-counter"
+                >
+                    01 / 01
+                </div>
+
+            </div>
+
+
+            <!-- زر تكبير -->
+
+            <button
+                class="fullscreen-button"
+                id="fullscreenBtn"
+                aria-label="عرض الصورة"
+            >
+                <i class="fa-solid fa-expand"></i>
+            </button>
+
+
+            <!-- السابق -->
+
+            <button
+                class="gallery-button previous"
+                id="previousImage"
+                aria-label="الصورة السابقة"
+            >
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+
+            <!-- التالي -->
+
+            <button
+                class="gallery-button next"
+                id="nextImage"
+                aria-label="الصورة التالية"
+            >
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+        </div>
+
+
+        <!-- الصور المصغرة -->
+
+        <div class="thumbnail-area">
+
+            <button
+                class="thumbnail-arrow"
+                id="thumbnailPrevious"
+            >
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+
+            <div
+                class="thumbnails"
+                id="thumbnails"
+            ></div>
+
+
+            <button
+                class="thumbnail-arrow"
+                id="thumbnailNext"
+            >
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+        </div>
+
+
+        <div class="gallery-footer">
+
+            <button
+                class="autoplay"
+                id="autoplay"
+            >
+                <i class="fa-solid fa-play"></i>
+                تشغيل تلقائي
+            </button>
+
+
+            <span>
+                اسحب الصورة للتنقل
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section class="section" id="skills">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            03
+        </span>
+
+        <div>
+
+            <small>
+                الخبرات
+            </small>
+
+            <h2>
+                مهاراتي
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="skills">
+
+
+        <div class="skill">
+
+            <span>01</span>
+
+            <i class="fa-solid fa-code"></i>
+
+            <h3>
+                تطوير المواقع
+            </h3>
+
+            <p>
+                مواقع حديثة وسريعة
+                ومتجاوبة مع جميع الأجهزة.
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <span>02</span>
+
+            <i class="fa-solid fa-pen-ruler"></i>
+
+            <h3>
+                تصميم الواجهات
+            </h3>
+
+            <p>
+                واجهات عصرية بهوية
+                بصرية مختلفة.
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <span>03</span>
+
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            <h3>
+                التصميم الرقمي
+            </h3>
+
+            <p>
+                بوسترات وهويات وإعلانات
+                ومحتوى بصري.
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <span>04</span>
+
+            <i class="fa-solid fa-lightbulb"></i>
+
+            <h3>
+                الأفكار الإبداعية
+            </h3>
+
+            <p>
+                تحويل الأفكار المختلفة
+                إلى مشاريع حقيقية.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DESIGN REQUEST
+========================= -->
+
+<section class="section" id="design">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            04
+        </span>
+
+        <div>
+
+            <small>
+                ابدأ مشروعك
+            </small>
+
+            <h2>
+                طلب تصميم
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="design-box">
+
+
+        <div class="design-intro">
+
+            <div class="design-badge">
+                SAYODA DESIGN
+            </div>
+
+            <h3>
+                عندك فكرة؟
+                <br>
+                <span>
+                    خلينا نحولها لتصميم.
+                </span>
+            </h3>
+
+            <p>
+                اكتب تفاصيل التصميم وسيتم
+                فتح واتساب برسالة جاهزة
+                تحتوي على بيانات طلبك.
+            </p>
+
+        </div>
+
+
+        <form id="designForm">
+
+
+            <div class="form-row">
+
+
+                <div class="field">
+
+                    <label>
+                        الاسم
+                    </label>
+
+                    <input
+                        id="clientName"
+                        type="text"
+                        placeholder="اكتب اسمك"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        نوع التصميم
+                    </label>
+
+                    <select
+                        id="designType"
+                        required
+                    >
+
+                        <option value="">
+                            اختر نوع التصميم
+                        </option>
+
+                        <option value="لوجو">
+                            لوجو
+                        </option>
+
+                        <option value="بوستر">
+                            بوستر
+                        </option>
+
+                        <option value="إعلان">
+                            إعلان
+                        </option>
+
+                        <option value="تصميم سوشيال ميديا">
+                            تصميم سوشيال ميديا
+                        </option>
+
+                        <option value="واجهة موقع">
+                            واجهة موقع
+                        </option>
+
+                        <option value="تصميم آخر">
+                            تصميم آخر
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="field">
+
+                <label>
+                    تفاصيل الطلب
+                </label>
+
+                <textarea
+                    id="designDetails"
+                    placeholder="اكتب كل تفاصيل التصميم..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="send-design"
+            >
+
+                <span>
+                    إرسال الطلب عبر واتساب
+                </span>
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section" id="contact">
+
+    <div class="section-heading">
+
+        <span class="section-number">
+            05
+        </span>
+
+        <div>
+
+            <small>
+                تواصل معي
+            </small>
+
+            <h2>
+                التواصل
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+        <!-- واتساب -->
+
+        <a
+            href="https://wa.me/201041254010"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+        >
+
+            <div class="contact-icon whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+
+            <div>
+
+                <small>
+                    واتساب
+                </small>
+
+                <strong>
+                    01041254010
+                </strong>
+
+            </div>
+
+            <i class="fa-solid fa-arrow-left contact-arrow"></i>
 
         </a>
 
 
-        <!-- Telegram -->
-        <a href="https://t.me/sayoda_elgadar"
-           target="_blank"
-           rel="noopener"
-           class="contact-card">
+        <!-- تيليجرام -->
 
-          <span class="contact-icon">
-            TG
-          </span>
+        <a
+            href="https://t.me/sayoda_elgadar"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+        >
 
-          <div>
-            <h3>Telegram</h3>
-            <p>@sayoda_elgadar ↗</p>
-          </div>
+            <div class="contact-icon telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </div>
 
-        </a>
+            <div>
 
+                <small>
+                    تيليجرام
+                </small>
 
-        <!-- Instagram -->
-        <a href="#"
-           target="_blank"
-           rel="noopener"
-           class="contact-card">
+                <strong>
+                    @sayoda_elgadar
+                </strong>
 
-          <span class="contact-icon">
-            IG
-          </span>
+            </div>
 
-          <div>
-            <h3>Instagram</h3>
-            <p>Follow me ↗</p>
-          </div>
+            <i class="fa-solid fa-arrow-left contact-arrow"></i>
 
         </a>
 
 
-        <!-- WhatsApp -->
-        <a href="https://wa.me/201041254010"
-           target="_blank"
-           rel="noopener"
-           class="contact-card whatsapp">
+        <!-- إنستجرام -->
 
-          <span class="contact-icon">
-            WA
-          </span>
+        <a
+            href="https://www.instagram.com/sayedhassan.2009?stkn=MTN0bWJjaGY1d3dobg=="
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+        >
 
-          <div>
-            <h3>WhatsApp</h3>
-            <p>Chat with me ↗</p>
-          </div>
+            <div class="contact-icon instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+            <div>
+
+                <small>
+                    إنستجرام
+                </small>
+
+                <strong>
+                    تابعني على إنستجرام
+                </strong>
+
+            </div>
+
+            <i class="fa-solid fa-arrow-left contact-arrow"></i>
 
         </a>
 
-      </div>
+    </div>
 
-    </section>
+</section>
+
+</main>
 
 
-  </main>
+<!-- =========================
+     LIGHTBOX
+========================= -->
+
+<div
+    class="lightbox"
+    id="lightbox"
+>
+
+    <button
+        class="lightbox-close"
+        id="closeLightbox"
+    >
+        <i class="fa-solid fa-xmark"></i>
+    </button>
 
 
-  <!-- FOOTER -->
-  <footer>
+    <button
+        class="lightbox-navigation right"
+        id="lightboxPrevious"
+    >
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+
+    <div class="lightbox-content">
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="SAYODA"
+            draggable="false"
+            oncontextmenu="return false"
+        >
+
+        <div id="lightboxCounter">
+            01 / 01
+        </div>
+
+    </div>
+
+
+    <button
+        class="lightbox-navigation left"
+        id="lightboxNext"
+    >
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+</div>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
 
     <div class="footer-logo">
-      SAYODA
+        SAYODA
     </div>
 
     <p>
-      © 2026 ALL RIGHTS RESERVED
+        © 2026 جميع الحقوق محفوظة
     </p>
 
-    <a href="https://t.me/sayoda_elgadar"
-       target="_blank"
-       rel="noopener">
-      EL-SAYED HASAN
+    <a
+        href="https://t.me/sayoda_elgadar"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        EL-SAYED HASAN
     </a>
 
-  </footer>
+</footer>
 
 
-  <!-- Gallery Script -->
-  <script>
+<script>
 
-    const gallery =
-      document.getElementById("galleryContainer");
+/* =====================================================
+   منع وسائل التنزيل السهلة للصور
+===================================================== */
 
-    for (let i = 1; i <= 12; i++) {
+document.addEventListener(
+    "contextmenu",
+    function(event) {
 
-      const file =
-        i === 1
-          ? "sayed.png"
-          : `sayed${i}.png`;
+        if (
+            event.target.tagName === "IMG" ||
+            event.target.closest(".gallery") ||
+            event.target.closest(".lightbox")
+        ) {
+            event.preventDefault();
+        }
 
-      const card =
-        document.createElement("div");
+    }
+);
 
-      card.className = "gallery-item";
 
-      card.innerHTML = `
-        <img
-          src="${file}"
-          alt="SAYODA ${i}"
-          loading="lazy"
-          onerror="this.parentElement.style.display='none'"
-        >
-      `;
+document.addEventListener(
+    "dragstart",
+    function(event) {
 
-      gallery.appendChild(card);
+        if (event.target.tagName === "IMG") {
+            event.preventDefault();
+        }
+
+    }
+);
+
+
+document.addEventListener(
+    "selectstart",
+    function(event) {
+
+        if (
+            event.target.tagName === "IMG" ||
+            event.target.closest(".gallery") ||
+            event.target.closest(".lightbox")
+        ) {
+            event.preventDefault();
+        }
+
+    }
+);
+
+
+/* =====================================================
+   شاشة البداية
+===================================================== */
+
+const intro =
+    document.getElementById("intro");
+
+const enterBtn =
+    document.getElementById("enterBtn");
+
+const mainContent =
+    document.getElementById("mainContent");
+
+
+enterBtn.addEventListener(
+    "click",
+    function() {
+
+        intro.classList.add("hidden");
+
+        setTimeout(
+            function() {
+
+                intro.style.display = "none";
+
+                mainContent.classList.add("visible");
+
+            },
+            700
+        );
+
+    }
+);
+
+
+/* =====================================================
+   Gallery
+===================================================== */
+
+let images = [];
+
+let currentIndex = 0;
+
+let autoPlaying = false;
+
+let autoTimer = null;
+
+
+const mainImage =
+    document.getElementById("mainImage");
+
+const thumbnails =
+    document.getElementById("thumbnails");
+
+const imageCounter =
+    document.getElementById("imageCounter");
+
+const imageTitle =
+    document.getElementById("imageTitle");
+
+const galleryLoading =
+    document.getElementById("galleryLoading");
+
+
+async function loadImages() {
+
+    try {
+
+        const response =
+            await fetch("images.json");
+
+        if (!response.ok) {
+            throw new Error("images.json غير موجود");
+        }
+
+        images =
+            await response.json();
+
+        if (
+            !Array.isArray(images) ||
+            images.length === 0
+        ) {
+            throw new Error("لا توجد صور");
+        }
+
+        createThumbnails();
+
+        showImage(0);
+
+        galleryLoading.style.display =
+            "none";
+
+    } catch(error) {
+
+        console.error(error);
+
+        galleryLoading.textContent =
+            "لا توجد أعمال مضافة حالياً";
+
     }
 
-  </script>
+}
 
 
-  <!-- Intro Script -->
-  <script>
+/* =====================================================
+   إنشاء الصور المصغرة
+===================================================== */
 
-    const intro =
-      document.getElementById("intro");
+function createThumbnails() {
 
-    const mainContent =
-      document.getElementById("mainContent");
+    thumbnails.innerHTML = "";
 
-    const enterBtn =
-      document.getElementById("enterBtn");
+    images.forEach(
+        function(image, index) {
+
+            const button =
+                document.createElement("button");
+
+            button.className =
+                "thumbnail";
+
+            button.dataset.index =
+                index;
+
+            button.innerHTML = `
+
+                <img
+                    src="${image}"
+                    alt=""
+                    draggable="false"
+                    loading="lazy"
+                    oncontextmenu="return false"
+                >
+
+                <span>
+                    ${String(index + 1).padStart(2,"0")}
+                </span>
+
+            `;
+
+            button.addEventListener(
+                "click",
+                function() {
+
+                    showImage(index);
+
+                }
+            );
+
+            thumbnails.appendChild(button);
+
+        }
+    );
+
+}
 
 
-    enterBtn.addEventListener("click", () => {
+/* =====================================================
+   عرض الصورة
+===================================================== */
 
-      intro.classList.add("hidden");
+function showImage(index) {
 
-      setTimeout(() => {
+    if (!images.length) return;
 
-        intro.style.display = "none";
 
-        mainContent.classList.add("active");
+    if (index < 0) {
 
-      }, 700);
+        index =
+            images.length - 1;
 
-    });
+    }
 
-  </script>
 
+    if (index >= images.length) {
+
+        index = 0;
+
+    }
+
+
+    currentIndex = index;
+
+
+    mainImage.classList.add(
+        "changing"
+    );
+
+
+    setTimeout(
+        function() {
+
+            mainImage.src =
+                images[currentIndex];
+
+            mainImage.classList.remove(
+                "changing"
+            );
+
+        },
+        180
+    );
+
+
+    imageTitle.textContent =
+        `عمل ${String(currentIndex + 1).padStart(2,"0")}`;
+
+
+    imageCounter.textContent =
+        `${String(currentIndex + 1).padStart(2,"0")} / ${String(images.length).padStart(2,"0")}`;
+
+
+    document
+        .querySelectorAll(".thumbnail")
+        .forEach(
+            function(item, index) {
+
+                item.classList.toggle(
+                    "active",
+                    index === currentIndex
+                );
+
+            }
+        );
+
+
+    const active =
+        document.querySelector(
+            `.thumbnail[data-index="${currentIndex}"]`
+        );
+
+
+    if (active) {
+
+        active.scrollIntoView({
+            behavior: "smooth",
+            inline: "center",
+            block: "nearest"
+        });
+
+    }
+
+}
+
+
+/* =====================================================
+   أزرار Gallery
+===================================================== */
+
+document
+    .getElementById("nextImage")
+    .addEventListener(
+        "click",
+        function() {
+
+            showImage(
+                currentIndex + 1
+            );
+
+        }
+    );
+
+
+document
+    .getElementById("previousImage")
+    .addEventListener(
+        "click",
+        function() {
+
+            showImage(
+                currentIndex - 1
+            );
+
+        }
+    );
+
+
+/* =====================================================
+   Thumbnails Scroll
+===================================================== */
+
+document
+    .getElementById("thumbnailNext")
+    .addEventListener(
+        "click",
+        function() {
+
+            thumbnails.scrollBy({
+                left: -300,
+                behavior: "smooth"
+            });
+
+        }
+    );
+
+
+document
+    .getElementById("thumbnailPrevious")
+    .addEventListener(
+        "click",
+        function() {
+
+            thumbnails.scrollBy({
+                left: 300,
+                behavior: "smooth"
+            });
+
+        }
+    );
+
+
+/* =====================================================
+   Auto Play
+===================================================== */
+
+const autoplay =
+    document.getElementById("autoplay");
+
+
+autoplay.addEventListener(
+    "click",
+    function() {
+
+        autoPlaying =
+            !autoPlaying;
+
+
+        if (autoPlaying) {
+
+            autoplay.innerHTML =
+                '<i class="fa-solid fa-pause"></i> إيقاف التشغيل';
+
+            autoTimer =
+                setInterval(
+                    function() {
+
+                        showImage(
+                            currentIndex + 1
+                        );
+
+                    },
+                    4000
+                );
+
+        } else {
+
+            autoplay.innerHTML =
+                '<i class="fa-solid fa-play"></i> تشغيل تلقائي';
+
+            clearInterval(autoTimer);
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   Touch Swipe
+===================================================== */
+
+let touchStartX = 0;
+
+let touchEndX = 0;
+
+
+const galleryStage =
+    document.getElementById("galleryStage");
+
+
+galleryStage.addEventListener(
+    "touchstart",
+    function(event) {
+
+        touchStartX =
+            event.changedTouches[0].screenX;
+
+    },
+    {
+        passive: true
+    }
+);
+
+
+galleryStage.addEventListener(
+    "touchend",
+    function(event) {
+
+        touchEndX =
+            event.changedTouches[0].screenX;
+
+        const distance =
+            touchStartX - touchEndX;
+
+
+        if (
+            Math.abs(distance) < 50
+        ) {
+            return;
+        }
+
+
+        if (distance > 0) {
+
+            showImage(
+                currentIndex + 1
+            );
+
+        } else {
+
+            showImage(
+                currentIndex - 1
+            );
+
+        }
+
+    },
+    {
+        passive: true
+    }
+);
+
+
+/* =====================================================
+   Lightbox
+===================================================== */
+
+const lightbox =
+    document.getElementById("lightbox");
+
+const lightboxImage =
+    document.getElementById("lightboxImage");
+
+const lightboxCounter =
+    document.getElementById("lightboxCounter");
+
+
+function openLightbox() {
+
+    lightboxImage.src =
+        images[currentIndex];
+
+    lightboxCounter.textContent =
+        `${String(currentIndex + 1).padStart(2,"0")} / ${String(images.length).padStart(2,"0")}`;
+
+    lightbox.classList.add("active");
+
+    document.body.classList.add(
+        "no-scroll"
+    );
+
+}
+
+
+function closeLightbox() {
+
+    lightbox.classList.remove(
+        "active"
+    );
+
+    document.body.classList.remove(
+        "no-scroll"
+    );
+
+}
+
+
+function updateLightbox() {
+
+    lightboxImage.src =
+        images[currentIndex];
+
+    lightboxCounter.textContent =
+        `${String(currentIndex + 1).padStart(2,"0")} / ${String(images.length).padStart(2,"0")}`;
+
+}
+
+
+document
+    .getElementById("fullscreenBtn")
+    .addEventListener(
+        "click",
+        openLightbox
+    );
+
+
+document
+    .getElementById("closeLightbox")
+    .addEventListener(
+        "click",
+        closeLightbox
+    );
+
+
+document
+    .getElementById("lightboxNext")
+    .addEventListener(
+        "click",
+        function() {
+
+            showImage(
+                currentIndex + 1
+            );
+
+            updateLightbox();
+
+        }
+    );
+
+
+document
+    .getElementById("lightboxPrevious")
+    .addEventListener(
+        "click",
+        function() {
+
+            showImage(
+                currentIndex - 1
+            );
+
+            updateLightbox();
+
+        }
+    );
+
+
+/* =====================================================
+   Keyboard
+===================================================== */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (
+            event.key === "Escape"
+        ) {
+
+            closeLightbox();
+
+        }
+
+
+        if (
+            event.key === "ArrowLeft"
+        ) {
+
+            showImage(
+                currentIndex + 1
+            );
+
+            if (
+                lightbox.classList.contains(
+                    "active"
+                )
+            ) {
+                updateLightbox();
+            }
+
+        }
+
+
+        if (
+            event.key === "ArrowRight"
+        ) {
+
+            showImage(
+                currentIndex - 1
+            );
+
+            if (
+                lightbox.classList.contains(
+                    "active"
+                )
+            ) {
+                updateLightbox();
+            }
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   طلب التصميم عبر WhatsApp
+===================================================== */
+
+document
+    .getElementById("designForm")
+    .addEventListener(
+        "submit",
+        function(event) {
+
+            event.preventDefault();
+
+
+            const name =
+                document
+                    .getElementById("clientName")
+                    .value
+                    .trim();
+
+
+            const type =
+                document
+                    .getElementById("designType")
+                    .value
+                    .trim();
+
+
+            const details =
+                document
+                    .getElementById("designDetails")
+                    .value
+                    .trim();
+
+
+            const message =
+
+`🔥 طلب تصميم جديد
+
+👤 الاسم:
+${name}
+
+🎨 نوع التصميم:
+${type}
+
+📝 التفاصيل:
+${details}
+
+━━━━━━━━━━━━━━
+SAYODA DESIGN`;
+
+
+            const url =
+                "https://wa.me/201041254010?text="
+                +
+                encodeURIComponent(message);
+
+
+            window.open(
+                url,
+                "_blank"
+            );
+
+        }
+    );
+
+
+/* تشغيل Gallery */
+
+loadImages();
+
+</script>
 
 </body>
 </html>
