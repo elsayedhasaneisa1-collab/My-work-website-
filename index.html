@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -8,78 +10,139 @@
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     >
 
-    <title>SAYODA | الهوية الرقمية</title>
+    <meta
+        name="theme-color"
+        content="#020711"
+    >
 
     <meta
         name="description"
-        content="SAYODA — الهوية الرقمية والتصميم والبرمجة"
+        content="SAYODA — السيد حسن | تصميم وبرمجة وهوية رقمية"
     >
 
-    <!-- صورة مشاركة الرابط -->
-    <meta property="og:title" content="SAYODA | الهوية الرقمية">
-    <meta property="og:description" content="تصميم • برمجة • إبداع رقمي">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="logo.png">
+    <meta
+        property="og:title"
+        content="SAYODA | السيد حسن"
+    >
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SAYODA | الهوية الرقمية">
-    <meta name="twitter:description" content="تصميم • برمجة • إبداع رقمي">
-    <meta name="twitter:image" content="logo.png">
+    <meta
+        property="og:description"
+        content="تصميم • برمجة • إبداع رقمي"
+    >
 
-    <!-- أيقونات Font Awesome من الإنترنت -->
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:image"
+        content="logo.png"
+    >
+
+    <title>
+        SAYODA | السيد حسن
+    </title>
+
+    <!-- Icons -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
 
 <body>
 
-<!-- =========================
-     طبقة الحماية
-========================= -->
+<!-- ==================================================
+     INTRO
+================================================== -->
 
-<div class="security-layer"></div>
+<div
+    class="intro"
+    id="intro"
+>
 
+    <div class="intro-box">
 
-<!-- =========================
-     شاشة الترمينال
-========================= -->
+        <div class="intro-top">
 
-<div class="intro" id="intro">
+            <div class="window-buttons">
 
-    <div class="terminal">
-
-        <div class="terminal-header">
-
-            <div class="terminal-buttons">
                 <span></span>
                 <span></span>
                 <span></span>
+
             </div>
 
-            <span class="terminal-title">
+            <span class="window-title">
                 SAYODA_SYSTEM
             </span>
 
         </div>
 
-        <div class="terminal-body">
 
-            <p>&gt; تشغيل النظام...</p>
-            <p>&gt; تحميل الهوية الرقمية...</p>
-            <p>&gt; تجهيز الأعمال...</p>
-            <p>&gt; فحص الاتصال...</p>
+        <div class="intro-content">
 
-            <p class="terminal-success">
-                &gt; تم السماح بالدخول ✓
-            </p>
+            <div class="terminal-line">
+                <span>&gt;</span>
+                تشغيل النظام...
+            </div>
 
-            <button id="enterBtn">
+            <div class="terminal-line">
+                <span>&gt;</span>
+                تحميل الهوية الرقمية...
+            </div>
+
+            <div class="terminal-line">
+                <span>&gt;</span>
+                فحص المكونات...
+            </div>
+
+            <div class="terminal-line">
+                <span>&gt;</span>
+                تجهيز المعرض...
+            </div>
+
+            <div class="terminal-success">
+                <span>&gt;</span>
+                تم السماح بالدخول ✓
+            </div>
+
+
+            <button
+                class="enter-button"
+                id="enterBtn"
+                type="button"
+            >
+
                 دخول إلى الموقع
+
                 <i class="fa-solid fa-arrow-left"></i>
+
             </button>
 
         </div>
@@ -89,45 +152,63 @@
 </div>
 
 
-<!-- =========================
+<!-- ==================================================
      NAVBAR
-========================= -->
+================================================== -->
 
 <header class="navbar">
 
-    <a href="#" class="logo">
+    <a
+        href="#home"
+        class="brand"
+        aria-label="الرئيسية"
+    >
 
-        <span class="logo-mark">S</span>
+        <span class="brand-symbol">
+            S
+        </span>
 
-        <span class="logo-text">
+        <span class="brand-name">
             SAYODA
         </span>
 
     </a>
 
 
-    <nav>
+    <nav class="desktop-nav">
 
-        <a href="#home">الرئيسية</a>
+        <a href="#home">
+            الرئيسية
+        </a>
 
-        <a href="#about">عني</a>
+        <a href="#about">
+            عني
+        </a>
 
-        <a href="#gallery">أعمالي</a>
+        <a href="#gallery">
+            الأعمال
+        </a>
 
-        <a href="#skills">مهاراتي</a>
+        <a href="#skills">
+            المهارات
+        </a>
 
-        <a href="#design">طلب تصميم</a>
+        <a href="#design">
+            طلب تصميم
+        </a>
 
-        <a href="#contact">تواصل</a>
+        <a href="#contact">
+            التواصل
+        </a>
 
     </nav>
 
 
     <a
+        class="nav-contact"
         href="https://wa.me/201041254010"
         target="_blank"
         rel="noopener noreferrer"
-        class="nav-whatsapp"
     >
 
         <i class="fa-brands fa-whatsapp"></i>
@@ -139,23 +220,32 @@
 </header>
 
 
+<!-- ==================================================
+     MAIN
+================================================== -->
+
 <main id="mainContent">
 
 
-<!-- =========================
+<!-- ==================================================
      HERO
-========================= -->
+================================================== -->
 
-<section class="hero" id="home">
+<section
+    class="hero"
+    id="home"
+>
+
+    <div class="hero-bg-glow"></div>
 
     <div class="hero-content">
 
 
-        <div class="profile">
+        <div class="profile-wrapper">
 
-            <div class="profile-border">
+            <div class="profile-ring">
 
-                <div class="profile-image">
+                <div class="profile-inner">
 
                     <img
                         src="sayed.png"
@@ -168,57 +258,83 @@
 
             </div>
 
+            <div class="profile-status">
+
+                <span></span>
+
+                متصل الآن
+
+            </div>
+
         </div>
 
 
-        <div class="hero-label">
-            مطور • مصمم • صانع محتوى رقمي
+        <div class="hero-tag">
+
+            <span></span>
+
+            مصمم • مطور • صانع أفكار
+
+            <span></span>
+
         </div>
 
 
-        <h1>
+        <h1 class="hero-title">
             SAYODA
         </h1>
 
 
-        <div class="hero-name">
+        <div class="hero-subtitle">
             السيد حسن
         </div>
 
 
         <p class="hero-description">
-            أحوّل الأفكار إلى تجارب رقمية
-            تجمع بين البرمجة والتصميم
-            والهوية البصرية.
+
+            أصنع تجارب رقمية مختلفة تجمع بين
+            <strong>التصميم</strong> و
+            <strong>البرمجة</strong> و
+            <strong>الهوية البصرية</strong>.
+
         </p>
 
 
-        <div class="hero-buttons">
+        <div class="hero-actions">
 
             <a
                 href="#gallery"
-                class="button primary"
+                class="btn btn-primary"
             >
+
                 استكشف أعمالي
+
                 <i class="fa-solid fa-arrow-left"></i>
+
             </a>
 
 
             <a
-                href="#design"
-                class="button secondary"
+                href="#contact"
+                class="btn btn-outline"
             >
-                اطلب تصميم
+
+                تواصل معي
+
+                <i class="fa-solid fa-paper-plane"></i>
+
             </a>
 
         </div>
 
 
-        <div class="scroll-indicator">
+        <div class="scroll-hint">
 
-            <span></span>
+            <span class="scroll-line"></span>
 
-            اسحب للأسفل
+            <span>
+                اكتشف المزيد
+            </span>
 
         </div>
 
@@ -227,23 +343,26 @@
 </section>
 
 
-<!-- =========================
+<!-- ==================================================
      ABOUT
-========================= -->
+================================================== -->
 
-<section class="section" id="about">
+<section
+    class="section"
+    id="about"
+>
 
-    <div class="section-heading">
+    <div class="section-header">
 
-        <span class="section-number">
+        <div class="section-index">
             01
-        </span>
+        </div>
 
         <div>
 
-            <small>
-                الهوية
-            </small>
+            <span class="section-overline">
+                الهوية الرقمية
+            </span>
 
             <h2>
                 عني
@@ -254,36 +373,138 @@
     </div>
 
 
-    <div class="about-card">
-
-        <div class="about-icon">
-
-            <i class="fa-solid fa-fingerprint"></i>
-
-        </div>
+    <div class="about-layout">
 
 
-        <div class="about-text">
+        <div class="about-main glass-card">
+
+            <div class="card-icon">
+
+                <i class="fa-solid fa-fingerprint"></i>
+
+            </div>
+
 
             <h3>
-                مش مجرد كود أو تصميم...
+                مش مجرد موقع...
                 دي بصمة.
             </h3>
 
+
             <p>
-                أعمل على صناعة تجارب رقمية
-                مختلفة تجمع بين الشكل الاحترافي
-                والأداء والهوية الخاصة.
+
+                أهتم بصناعة الأشياء الرقمية بشكل مختلف.
+                من أول الفكرة والتصميم لحد تنفيذ التجربة
+                بشكل سريع ومرتب ومتجاوب مع جميع الأجهزة.
+
             </p>
+
+
+            <div class="about-line"></div>
+
+
+            <div class="about-meta">
+
+                <div>
+
+                    <span>
+                        الهوية
+                    </span>
+
+                    <strong>
+                        SAYODA
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        المجال
+                    </span>
+
+                    <strong>
+                        Digital
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        الحالة
+                    </span>
+
+                    <strong class="green">
+                        متاح
+                    </strong>
+
+                </div>
+
+            </div>
 
         </div>
 
 
-        <div class="online-status">
+        <div class="about-side">
 
-            <span></span>
+            <div class="mini-card">
 
-            النظام يعمل
+                <i class="fa-solid fa-code"></i>
+
+                <div>
+
+                    <strong>
+                        تطوير
+                    </strong>
+
+                    <span>
+                        Web Development
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="mini-card">
+
+                <i class="fa-solid fa-pen-ruler"></i>
+
+                <div>
+
+                    <strong>
+                        تصميم
+                    </strong>
+
+                    <span>
+                        Visual Design
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="mini-card">
+
+                <i class="fa-solid fa-bolt"></i>
+
+                <div>
+
+                    <strong>
+                        سرعة
+                    </strong>
+
+                    <span>
+                        Performance
+                    </span>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -292,23 +513,26 @@
 </section>
 
 
-<!-- =========================
+<!-- ==================================================
      GALLERY
-========================= -->
+================================================== -->
 
-<section class="section gallery-section" id="gallery">
+<section
+    class="section gallery-section"
+    id="gallery"
+>
 
-    <div class="section-heading">
+    <div class="section-header">
 
-        <span class="section-number">
+        <div class="section-index">
             02
-        </span>
+        </div>
 
         <div>
 
-            <small>
+            <span class="section-overline">
                 معرض الأعمال
-            </small>
+            </span>
 
             <h2>
                 أعمالي
@@ -319,10 +543,8 @@
     </div>
 
 
-    <div class="gallery">
+    <div class="gallery-wrapper">
 
-
-        <!-- الصورة الرئيسية -->
 
         <div
             class="gallery-stage"
@@ -333,7 +555,11 @@
                 class="gallery-loading"
                 id="galleryLoading"
             >
+
+                <div class="loading-spinner"></div>
+
                 جاري تحميل الأعمال...
+
             </div>
 
 
@@ -347,14 +573,59 @@
             >
 
 
-            <div class="gallery-gradient"></div>
+            <div class="gallery-overlay"></div>
 
 
-            <div class="gallery-information">
+            <div class="gallery-top-info">
+
+                <div class="gallery-project">
+                    SAYODA / PROJECT
+                </div>
+
+
+                <button
+                    type="button"
+                    class="expand-btn"
+                    id="fullscreenBtn"
+                    aria-label="عرض الصورة بالحجم الكامل"
+                >
+
+                    <i class="fa-solid fa-expand"></i>
+
+                </button>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="gallery-nav gallery-prev"
+                id="previousImage"
+                aria-label="الصورة السابقة"
+            >
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="gallery-nav gallery-next"
+                id="nextImage"
+                aria-label="الصورة التالية"
+            >
+
+                <i class="fa-solid fa-chevron-left"></i>
+
+            </button>
+
+
+            <div class="gallery-bottom">
 
                 <div>
 
-                    <span>
+                    <span class="gallery-label">
                         المشروع
                     </span>
 
@@ -366,59 +637,28 @@
 
 
                 <div
+                    class="gallery-counter"
                     id="imageCounter"
-                    class="image-counter"
                 >
                     01 / 01
                 </div>
 
             </div>
 
-
-            <!-- زر تكبير -->
-
-            <button
-                class="fullscreen-button"
-                id="fullscreenBtn"
-                aria-label="عرض الصورة"
-            >
-                <i class="fa-solid fa-expand"></i>
-            </button>
-
-
-            <!-- السابق -->
-
-            <button
-                class="gallery-button previous"
-                id="previousImage"
-                aria-label="الصورة السابقة"
-            >
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
-
-
-            <!-- التالي -->
-
-            <button
-                class="gallery-button next"
-                id="nextImage"
-                aria-label="الصورة التالية"
-            >
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-
         </div>
 
 
-        <!-- الصور المصغرة -->
-
-        <div class="thumbnail-area">
+        <div class="thumbnail-row">
 
             <button
-                class="thumbnail-arrow"
+                type="button"
+                class="thumb-control"
                 id="thumbnailPrevious"
+                aria-label="الصور السابقة"
             >
+
                 <i class="fa-solid fa-chevron-right"></i>
+
             </button>
 
 
@@ -429,28 +669,36 @@
 
 
             <button
-                class="thumbnail-arrow"
+                type="button"
+                class="thumb-control"
                 id="thumbnailNext"
+                aria-label="الصور التالية"
             >
+
                 <i class="fa-solid fa-chevron-left"></i>
+
             </button>
 
         </div>
 
 
-        <div class="gallery-footer">
+        <div class="gallery-tools">
 
             <button
-                class="autoplay"
+                type="button"
+                class="autoplay-btn"
                 id="autoplay"
             >
+
                 <i class="fa-solid fa-play"></i>
+
                 تشغيل تلقائي
+
             </button>
 
 
             <span>
-                اسحب الصورة للتنقل
+                يمكنك السحب على الصورة للتنقل
             </span>
 
         </div>
@@ -460,23 +708,26 @@
 </section>
 
 
-<!-- =========================
+<!-- ==================================================
      SKILLS
-========================= -->
+================================================== -->
 
-<section class="section" id="skills">
+<section
+    class="section"
+    id="skills"
+>
 
-    <div class="section-heading">
+    <div class="section-header">
 
-        <span class="section-number">
+        <div class="section-index">
             03
-        </span>
+        </div>
 
         <div>
 
-            <small>
-                الخبرات
-            </small>
+            <span class="section-overline">
+                ماذا أقدم؟
+            </span>
 
             <h2>
                 مهاراتي
@@ -487,105 +738,124 @@
     </div>
 
 
-    <div class="skills">
+    <div class="skills-grid">
 
 
-        <div class="skill">
+        <article class="skill-card">
 
-            <span>01</span>
+            <div class="skill-number">
+                01
+            </div>
 
-            <i class="fa-solid fa-code"></i>
+            <div class="skill-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
 
             <h3>
                 تطوير المواقع
             </h3>
 
             <p>
-                مواقع حديثة وسريعة
-                ومتجاوبة مع جميع الأجهزة.
+                مواقع حديثة وسريعة ومتجاوبة
+                مع الموبايل والكمبيوتر.
             </p>
 
-        </div>
+        </article>
 
 
-        <div class="skill">
+        <article class="skill-card">
 
-            <span>02</span>
+            <div class="skill-number">
+                02
+            </div>
 
-            <i class="fa-solid fa-pen-ruler"></i>
+            <div class="skill-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
 
             <h3>
                 تصميم الواجهات
             </h3>
 
             <p>
-                واجهات عصرية بهوية
-                بصرية مختلفة.
+                واجهات احترافية بهوية واضحة
+                وتجربة استخدام مميزة.
             </p>
 
-        </div>
+        </article>
 
 
-        <div class="skill">
+        <article class="skill-card">
 
-            <span>03</span>
+            <div class="skill-number">
+                03
+            </div>
 
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <div class="skill-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
 
             <h3>
-                التصميم الرقمي
+                التصميم الإبداعي
             </h3>
 
             <p>
-                بوسترات وهويات وإعلانات
-                ومحتوى بصري.
+                بوسترات وإعلانات ومحتوى بصري
+                بطابع خاص.
             </p>
 
-        </div>
+        </article>
 
 
-        <div class="skill">
+        <article class="skill-card">
 
-            <span>04</span>
+            <div class="skill-number">
+                04
+            </div>
 
-            <i class="fa-solid fa-lightbulb"></i>
+            <div class="skill-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+            </div>
 
             <h3>
-                الأفكار الإبداعية
+                صناعة الأفكار
             </h3>
 
             <p>
-                تحويل الأفكار المختلفة
-                إلى مشاريع حقيقية.
+                تحويل الفكرة الخام إلى مشروع
+                رقمي قابل للتنفيذ.
             </p>
 
-        </div>
+        </article>
 
     </div>
 
 </section>
 
 
-<!-- =========================
+<!-- ==================================================
      DESIGN REQUEST
-========================= -->
+================================================== -->
 
-<section class="section" id="design">
+<section
+    class="section"
+    id="design"
+>
 
-    <div class="section-heading">
+    <div class="section-header">
 
-        <span class="section-number">
+        <div class="section-index">
             04
-        </span>
+        </div>
 
         <div>
 
-            <small>
+            <span class="section-overline">
                 ابدأ مشروعك
-            </small>
+            </span>
 
             <h2>
-                طلب تصميم
+                اطلب تصميم
             </h2>
 
         </div>
@@ -593,41 +863,57 @@
     </div>
 
 
-    <div class="design-box">
+    <div class="request-box">
 
 
-        <div class="design-intro">
+        <div class="request-info">
 
-            <div class="design-badge">
+            <span class="request-tag">
                 SAYODA DESIGN
-            </div>
+            </span>
+
 
             <h3>
                 عندك فكرة؟
                 <br>
+
                 <span>
-                    خلينا نحولها لتصميم.
+                    خلّيها تظهر بشكل مختلف.
                 </span>
             </h3>
 
+
             <p>
-                اكتب تفاصيل التصميم وسيتم
-                فتح واتساب برسالة جاهزة
-                تحتوي على بيانات طلبك.
+
+                اكتب تفاصيل مشروعك، وبعد الضغط
+                على إرسال سيتم تجهيز رسالة
+                وإرسالها مباشرة عبر واتساب.
+
             </p>
+
+
+            <div class="request-decoration">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
 
         </div>
 
 
-        <form id="designForm">
+        <form
+            id="designForm"
+            class="request-form"
+        >
 
-
-            <div class="form-row">
+            <div class="form-grid">
 
 
                 <div class="field">
 
-                    <label>
+                    <label for="clientName">
                         الاسم
                     </label>
 
@@ -635,6 +921,7 @@
                         id="clientName"
                         type="text"
                         placeholder="اكتب اسمك"
+                        autocomplete="name"
                         required
                     >
 
@@ -643,7 +930,7 @@
 
                 <div class="field">
 
-                    <label>
+                    <label for="designType">
                         نوع التصميم
                     </label>
 
@@ -669,15 +956,19 @@
                         </option>
 
                         <option value="تصميم سوشيال ميديا">
-                            تصميم سوشيال ميديا
+                            سوشيال ميديا
                         </option>
 
                         <option value="واجهة موقع">
                             واجهة موقع
                         </option>
 
-                        <option value="تصميم آخر">
-                            تصميم آخر
+                        <option value="هوية بصرية">
+                            هوية بصرية
+                        </option>
+
+                        <option value="أخرى">
+                            أخرى
                         </option>
 
                     </select>
@@ -689,13 +980,13 @@
 
             <div class="field">
 
-                <label>
+                <label for="designDetails">
                     تفاصيل الطلب
                 </label>
 
                 <textarea
                     id="designDetails"
-                    placeholder="اكتب كل تفاصيل التصميم..."
+                    placeholder="اكتب تفاصيل فكرتك هنا..."
                     required
                 ></textarea>
 
@@ -704,7 +995,7 @@
 
             <button
                 type="submit"
-                class="send-design"
+                class="submit-request"
             >
 
                 <span>
@@ -722,23 +1013,26 @@
 </section>
 
 
-<!-- =========================
+<!-- ==================================================
      CONTACT
-========================= -->
+================================================== -->
 
-<section class="section" id="contact">
+<section
+    class="section"
+    id="contact"
+>
 
-    <div class="section-heading">
+    <div class="section-header">
 
-        <span class="section-number">
+        <div class="section-index">
             05
-        </span>
+        </div>
 
         <div>
 
-            <small>
+            <span class="section-overline">
                 تواصل معي
-            </small>
+            </span>
 
             <h2>
                 التواصل
@@ -749,27 +1043,29 @@
     </div>
 
 
-    <div class="contact-grid">
+    <div class="social-grid">
 
 
-        <!-- واتساب -->
+        <!-- WhatsApp -->
 
         <a
+            class="social-card"
             href="https://wa.me/201041254010"
             target="_blank"
             rel="noopener noreferrer"
-            class="contact-card"
         >
 
-            <div class="contact-icon whatsapp">
+            <div class="social-icon whatsapp-icon">
+
                 <i class="fa-brands fa-whatsapp"></i>
+
             </div>
 
-            <div>
+            <div class="social-content">
 
-                <small>
+                <span>
                     واتساب
-                </small>
+                </span>
 
                 <strong>
                     01041254010
@@ -777,29 +1073,31 @@
 
             </div>
 
-            <i class="fa-solid fa-arrow-left contact-arrow"></i>
+            <i class="fa-solid fa-arrow-left social-arrow"></i>
 
         </a>
 
 
-        <!-- تيليجرام -->
+        <!-- Telegram -->
 
         <a
+            class="social-card"
             href="https://t.me/sayoda_elgadar"
             target="_blank"
             rel="noopener noreferrer"
-            class="contact-card"
         >
 
-            <div class="contact-icon telegram">
+            <div class="social-icon telegram-icon">
+
                 <i class="fa-brands fa-telegram"></i>
+
             </div>
 
-            <div>
+            <div class="social-content">
 
-                <small>
+                <span>
                     تيليجرام
-                </small>
+                </span>
 
                 <strong>
                     @sayoda_elgadar
@@ -807,69 +1105,94 @@
 
             </div>
 
-            <i class="fa-solid fa-arrow-left contact-arrow"></i>
+            <i class="fa-solid fa-arrow-left social-arrow"></i>
 
         </a>
 
 
-        <!-- إنستجرام -->
+        <!-- Instagram -->
 
         <a
+            class="social-card"
             href="https://www.instagram.com/sayedhassan.2009?stkn=MTN0bWJjaGY1d3dobg=="
             target="_blank"
             rel="noopener noreferrer"
-            class="contact-card"
         >
 
-            <div class="contact-icon instagram">
+            <div class="social-icon instagram-icon">
+
                 <i class="fa-brands fa-instagram"></i>
+
             </div>
 
-            <div>
+            <div class="social-content">
 
-                <small>
+                <span>
                     إنستجرام
-                </small>
+                </span>
 
                 <strong>
-                    تابعني على إنستجرام
+                    @sayedhassan.2009
                 </strong>
 
             </div>
 
-            <i class="fa-solid fa-arrow-left contact-arrow"></i>
+            <i class="fa-solid fa-arrow-left social-arrow"></i>
 
         </a>
 
     </div>
 
+
+    <div class="contact-bottom">
+
+        <span></span>
+
+        <p>
+            متاح للتعاون والمشاريع الجديدة
+        </p>
+
+        <span></span>
+
+    </div>
+
 </section>
+
 
 </main>
 
 
-<!-- =========================
+<!-- ==================================================
      LIGHTBOX
-========================= -->
+================================================== -->
 
 <div
     class="lightbox"
     id="lightbox"
+    aria-hidden="true"
 >
 
     <button
+        type="button"
         class="lightbox-close"
         id="closeLightbox"
+        aria-label="إغلاق"
     >
+
         <i class="fa-solid fa-xmark"></i>
+
     </button>
 
 
     <button
-        class="lightbox-navigation right"
+        type="button"
+        class="lightbox-nav lightbox-right"
         id="lightboxPrevious"
+        aria-label="السابق"
     >
+
         <i class="fa-solid fa-chevron-right"></i>
+
     </button>
 
 
@@ -891,28 +1214,34 @@
 
 
     <button
-        class="lightbox-navigation left"
+        type="button"
+        class="lightbox-nav lightbox-left"
         id="lightboxNext"
+        aria-label="التالي"
     >
+
         <i class="fa-solid fa-chevron-left"></i>
+
     </button>
 
 </div>
 
 
-<!-- =========================
+<!-- ==================================================
      FOOTER
-========================= -->
+================================================== -->
 
-<footer>
+<footer class="footer">
 
-    <div class="footer-logo">
+    <div class="footer-brand">
         SAYODA
     </div>
+
 
     <p>
         © 2026 جميع الحقوق محفوظة
     </p>
+
 
     <a
         href="https://t.me/sayoda_elgadar"
@@ -927,92 +1256,111 @@
 
 <script>
 
-/* =====================================================
-   منع وسائل التنزيل السهلة للصور
-===================================================== */
+/* =========================================================
+   SETTINGS
+========================================================= */
 
-document.addEventListener(
-    "contextmenu",
-    function(event) {
-
-        if (
-            event.target.tagName === "IMG" ||
-            event.target.closest(".gallery") ||
-            event.target.closest(".lightbox")
-        ) {
-            event.preventDefault();
-        }
-
-    }
-);
+const WHATSAPP_NUMBER = "201041254010";
 
 
-document.addEventListener(
-    "dragstart",
-    function(event) {
+/* =========================================================
+   INTRO
+========================================================= */
 
-        if (event.target.tagName === "IMG") {
-            event.preventDefault();
-        }
+const intro = document.getElementById("intro");
+const enterBtn = document.getElementById("enterBtn");
+const mainContent = document.getElementById("mainContent");
 
-    }
-);
+enterBtn.addEventListener("click", () => {
 
+    intro.classList.add("hidden");
 
-document.addEventListener(
-    "selectstart",
-    function(event) {
+    setTimeout(() => {
 
-        if (
-            event.target.tagName === "IMG" ||
-            event.target.closest(".gallery") ||
-            event.target.closest(".lightbox")
-        ) {
-            event.preventDefault();
-        }
+        intro.style.display = "none";
 
-    }
-);
+        mainContent.classList.add("visible");
+
+    }, 650);
+
+});
 
 
-/* =====================================================
-   شاشة البداية
-===================================================== */
+/* =========================================================
+   IMAGE PROTECTION
+========================================================= */
 
-const intro =
-    document.getElementById("intro");
+document.addEventListener("contextmenu", (event) => {
 
-const enterBtn =
-    document.getElementById("enterBtn");
+    if (
+        event.target.tagName === "IMG" ||
+        event.target.closest(".gallery-stage") ||
+        event.target.closest(".thumbnail") ||
+        event.target.closest(".lightbox")
+    ) {
 
-const mainContent =
-    document.getElementById("mainContent");
-
-
-enterBtn.addEventListener(
-    "click",
-    function() {
-
-        intro.classList.add("hidden");
-
-        setTimeout(
-            function() {
-
-                intro.style.display = "none";
-
-                mainContent.classList.add("visible");
-
-            },
-            700
-        );
+        event.preventDefault();
 
     }
-);
+
+});
 
 
-/* =====================================================
-   Gallery
-===================================================== */
+document.addEventListener("dragstart", (event) => {
+
+    if (event.target.tagName === "IMG") {
+
+        event.preventDefault();
+
+    }
+
+});
+
+
+document.addEventListener("selectstart", (event) => {
+
+    if (
+        event.target.tagName === "IMG" ||
+        event.target.closest(".gallery-stage") ||
+        event.target.closest(".lightbox")
+    ) {
+
+        event.preventDefault();
+
+    }
+
+});
+
+
+/*
+    منع اختصارات حفظ الصفحة/الصورة الشائعة.
+    ملاحظة: لا يمكن منع أدوات المطور أو Screenshot
+    بشكل حقيقي من JavaScript.
+*/
+
+document.addEventListener("keydown", (event) => {
+
+    const key = event.key.toLowerCase();
+
+    if (
+        (event.ctrlKey || event.metaKey) &&
+        (
+            key === "s" ||
+            key === "u" ||
+            key === "p"
+        )
+    ) {
+
+        event.preventDefault();
+
+    }
+
+});
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
 
 let images = [];
 
@@ -1023,20 +1371,23 @@ let autoPlaying = false;
 let autoTimer = null;
 
 
+const galleryStage =
+    document.getElementById("galleryStage");
+
+const galleryLoading =
+    document.getElementById("galleryLoading");
+
 const mainImage =
     document.getElementById("mainImage");
 
 const thumbnails =
     document.getElementById("thumbnails");
 
-const imageCounter =
-    document.getElementById("imageCounter");
-
 const imageTitle =
     document.getElementById("imageTitle");
 
-const galleryLoading =
-    document.getElementById("galleryLoading");
+const imageCounter =
+    document.getElementById("imageCounter");
 
 
 async function loadImages() {
@@ -1044,97 +1395,134 @@ async function loadImages() {
     try {
 
         const response =
-            await fetch("images.json");
+            await fetch("images.json", {
+                cache: "no-store"
+            });
+
 
         if (!response.ok) {
-            throw new Error("images.json غير موجود");
+
+            throw new Error(
+                "images.json not found"
+            );
+
         }
 
-        images =
+
+        const data =
             await response.json();
 
+
         if (
-            !Array.isArray(images) ||
-            images.length === 0
+            !Array.isArray(data) ||
+            data.length === 0
         ) {
-            throw new Error("لا توجد صور");
+
+            throw new Error(
+                "No images"
+            );
+
         }
+
+
+        images = data;
+
 
         createThumbnails();
 
         showImage(0);
 
-        galleryLoading.style.display =
-            "none";
 
-    } catch(error) {
+        galleryLoading.classList.add(
+            "hidden"
+        );
+
+
+    } catch (error) {
 
         console.error(error);
 
-        galleryLoading.textContent =
-            "لا توجد أعمال مضافة حالياً";
+        galleryLoading.innerHTML = `
+
+            <div class="gallery-error">
+
+                <i class="fa-regular fa-image"></i>
+
+                <span>
+                    لم يتم العثور على صور الأعمال
+                </span>
+
+                <small>
+                    تأكد من وجود images.json
+                </small>
+
+            </div>
+
+        `;
 
     }
 
 }
 
 
-/* =====================================================
-   إنشاء الصور المصغرة
-===================================================== */
+/* =========================================================
+   THUMBNAILS
+========================================================= */
 
 function createThumbnails() {
 
     thumbnails.innerHTML = "";
 
-    images.forEach(
-        function(image, index) {
 
-            const button =
-                document.createElement("button");
+    images.forEach((image, index) => {
 
-            button.className =
-                "thumbnail";
+        const button =
+            document.createElement("button");
 
-            button.dataset.index =
-                index;
 
-            button.innerHTML = `
+        button.type = "button";
 
-                <img
-                    src="${image}"
-                    alt=""
-                    draggable="false"
-                    loading="lazy"
-                    oncontextmenu="return false"
-                >
+        button.className =
+            "thumbnail";
 
-                <span>
-                    ${String(index + 1).padStart(2,"0")}
-                </span>
 
-            `;
+        button.dataset.index =
+            index;
 
-            button.addEventListener(
-                "click",
-                function() {
 
-                    showImage(index);
+        button.innerHTML = `
 
-                }
-            );
+            <img
+                src="${image}"
+                alt=""
+                draggable="false"
+                loading="lazy"
+                oncontextmenu="return false"
+            >
 
-            thumbnails.appendChild(button);
+            <span>
+                ${String(index + 1).padStart(2, "0")}
+            </span>
 
-        }
-    );
+        `;
+
+
+        button.addEventListener(
+            "click",
+            () => showImage(index)
+        );
+
+
+        thumbnails.appendChild(button);
+
+    });
 
 }
 
 
-/* =====================================================
-   عرض الصورة
-===================================================== */
+/* =========================================================
+   SHOW IMAGE
+========================================================= */
 
 function showImage(index) {
 
@@ -1164,41 +1552,51 @@ function showImage(index) {
     );
 
 
-    setTimeout(
-        function() {
+    setTimeout(() => {
 
-            mainImage.src =
-                images[currentIndex];
+        mainImage.src =
+            images[currentIndex];
 
-            mainImage.classList.remove(
-                "changing"
-            );
 
-        },
-        180
-    );
+        mainImage.alt =
+            `عمل SAYODA رقم ${currentIndex + 1}`;
+
+
+        mainImage.classList.remove(
+            "changing"
+        );
+
+    }, 180);
+
+
+    const number =
+        String(currentIndex + 1)
+            .padStart(2, "0");
+
+
+    const total =
+        String(images.length)
+            .padStart(2, "0");
 
 
     imageTitle.textContent =
-        `عمل ${String(currentIndex + 1).padStart(2,"0")}`;
+        `عمل ${number}`;
 
 
     imageCounter.textContent =
-        `${String(currentIndex + 1).padStart(2,"0")} / ${String(images.length).padStart(2,"0")}`;
+        `${number} / ${total}`;
 
 
     document
         .querySelectorAll(".thumbnail")
-        .forEach(
-            function(item, index) {
+        .forEach((thumb, index) => {
 
-                item.classList.toggle(
-                    "active",
-                    index === currentIndex
-                );
+            thumb.classList.toggle(
+                "active",
+                index === currentIndex
+            );
 
-            }
-        );
+        });
 
 
     const active =
@@ -1220,21 +1618,15 @@ function showImage(index) {
 }
 
 
-/* =====================================================
-   أزرار Gallery
-===================================================== */
+/* =========================================================
+   GALLERY BUTTONS
+========================================================= */
 
 document
     .getElementById("nextImage")
     .addEventListener(
         "click",
-        function() {
-
-            showImage(
-                currentIndex + 1
-            );
-
-        }
+        () => showImage(currentIndex + 1)
     );
 
 
@@ -1242,53 +1634,41 @@ document
     .getElementById("previousImage")
     .addEventListener(
         "click",
-        function() {
-
-            showImage(
-                currentIndex - 1
-            );
-
-        }
+        () => showImage(currentIndex - 1)
     );
 
 
-/* =====================================================
-   Thumbnails Scroll
-===================================================== */
+/* =========================================================
+   THUMBNAIL CONTROLS
+========================================================= */
 
 document
     .getElementById("thumbnailNext")
-    .addEventListener(
-        "click",
-        function() {
+    .addEventListener("click", () => {
 
-            thumbnails.scrollBy({
-                left: -300,
-                behavior: "smooth"
-            });
+        thumbnails.scrollBy({
+            left: -300,
+            behavior: "smooth"
+        });
 
-        }
-    );
+    });
 
 
 document
     .getElementById("thumbnailPrevious")
-    .addEventListener(
-        "click",
-        function() {
+    .addEventListener("click", () => {
 
-            thumbnails.scrollBy({
-                left: 300,
-                behavior: "smooth"
-            });
+        thumbnails.scrollBy({
+            left: 300,
+            behavior: "smooth"
+        });
 
-        }
-    );
+    });
 
 
-/* =====================================================
-   Auto Play
-===================================================== */
+/* =========================================================
+   AUTOPLAY
+========================================================= */
 
 const autoplay =
     document.getElementById("autoplay");
@@ -1296,7 +1676,7 @@ const autoplay =
 
 autoplay.addEventListener(
     "click",
-    function() {
+    () => {
 
         autoPlaying =
             !autoPlaying;
@@ -1304,25 +1684,29 @@ autoplay.addEventListener(
 
         if (autoPlaying) {
 
-            autoplay.innerHTML =
-                '<i class="fa-solid fa-pause"></i> إيقاف التشغيل';
+            autoplay.innerHTML = `
+                <i class="fa-solid fa-pause"></i>
+                إيقاف التشغيل
+            `;
+
 
             autoTimer =
-                setInterval(
-                    function() {
+                setInterval(() => {
 
-                        showImage(
-                            currentIndex + 1
-                        );
+                    showImage(
+                        currentIndex + 1
+                    );
 
-                    },
-                    4000
-                );
+                }, 4000);
+
 
         } else {
 
-            autoplay.innerHTML =
-                '<i class="fa-solid fa-play"></i> تشغيل تلقائي';
+            autoplay.innerHTML = `
+                <i class="fa-solid fa-play"></i>
+                تشغيل تلقائي
+            `;
+
 
             clearInterval(autoTimer);
 
@@ -1332,22 +1716,18 @@ autoplay.addEventListener(
 );
 
 
-/* =====================================================
-   Touch Swipe
-===================================================== */
+/* =========================================================
+   TOUCH SWIPE
+========================================================= */
 
 let touchStartX = 0;
 
 let touchEndX = 0;
 
 
-const galleryStage =
-    document.getElementById("galleryStage");
-
-
 galleryStage.addEventListener(
     "touchstart",
-    function(event) {
+    (event) => {
 
         touchStartX =
             event.changedTouches[0].screenX;
@@ -1361,20 +1741,19 @@ galleryStage.addEventListener(
 
 galleryStage.addEventListener(
     "touchend",
-    function(event) {
+    (event) => {
 
         touchEndX =
             event.changedTouches[0].screenX;
+
 
         const distance =
             touchStartX - touchEndX;
 
 
         if (
-            Math.abs(distance) < 50
-        ) {
-            return;
-        }
+            Math.abs(distance) < 45
+        ) return;
 
 
         if (distance > 0) {
@@ -1398,9 +1777,9 @@ galleryStage.addEventListener(
 );
 
 
-/* =====================================================
-   Lightbox
-===================================================== */
+/* =========================================================
+   LIGHTBOX
+========================================================= */
 
 const lightbox =
     document.getElementById("lightbox");
@@ -1414,13 +1793,26 @@ const lightboxCounter =
 
 function openLightbox() {
 
+    if (!images.length) return;
+
+
     lightboxImage.src =
         images[currentIndex];
 
-    lightboxCounter.textContent =
-        `${String(currentIndex + 1).padStart(2,"0")} / ${String(images.length).padStart(2,"0")}`;
 
-    lightbox.classList.add("active");
+    updateLightboxCounter();
+
+
+    lightbox.classList.add(
+        "active"
+    );
+
+
+    lightbox.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
 
     document.body.classList.add(
         "no-scroll"
@@ -1435,6 +1827,13 @@ function closeLightbox() {
         "active"
     );
 
+
+    lightbox.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+
     document.body.classList.remove(
         "no-scroll"
     );
@@ -1447,8 +1846,26 @@ function updateLightbox() {
     lightboxImage.src =
         images[currentIndex];
 
+
+    updateLightboxCounter();
+
+}
+
+
+function updateLightboxCounter() {
+
+    const current =
+        String(currentIndex + 1)
+            .padStart(2, "0");
+
+
+    const total =
+        String(images.length)
+            .padStart(2, "0");
+
+
     lightboxCounter.textContent =
-        `${String(currentIndex + 1).padStart(2,"0")} / ${String(images.length).padStart(2,"0")}`;
+        `${current} / ${total}`;
 
 }
 
@@ -1473,7 +1890,7 @@ document
     .getElementById("lightboxNext")
     .addEventListener(
         "click",
-        function() {
+        () => {
 
             showImage(
                 currentIndex + 1
@@ -1489,7 +1906,7 @@ document
     .getElementById("lightboxPrevious")
     .addEventListener(
         "click",
-        function() {
+        () => {
 
             showImage(
                 currentIndex - 1
@@ -1501,13 +1918,29 @@ document
     );
 
 
-/* =====================================================
-   Keyboard
-===================================================== */
+lightbox.addEventListener(
+    "click",
+    (event) => {
+
+        if (
+            event.target === lightbox
+        ) {
+
+            closeLightbox();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   KEYBOARD
+========================================================= */
 
 document.addEventListener(
     "keydown",
-    function(event) {
+    (event) => {
 
         if (
             event.key === "Escape"
@@ -1526,12 +1959,15 @@ document.addEventListener(
                 currentIndex + 1
             );
 
+
             if (
                 lightbox.classList.contains(
                     "active"
                 )
             ) {
+
                 updateLightbox();
+
             }
 
         }
@@ -1545,12 +1981,15 @@ document.addEventListener(
                 currentIndex - 1
             );
 
+
             if (
                 lightbox.classList.contains(
                     "active"
                 )
             ) {
+
                 updateLightbox();
+
             }
 
         }
@@ -1559,15 +1998,15 @@ document.addEventListener(
 );
 
 
-/* =====================================================
-   طلب التصميم عبر WhatsApp
-===================================================== */
+/* =========================================================
+   DESIGN REQUEST
+========================================================= */
 
 document
     .getElementById("designForm")
     .addEventListener(
         "submit",
-        function(event) {
+        (event) => {
 
             event.preventDefault();
 
@@ -1595,7 +2034,7 @@ document
 
             const message =
 
-`🔥 طلب تصميم جديد
+`🔥 طلب تصميم جديد من موقع SAYODA
 
 👤 الاسم:
 ${name}
@@ -1603,7 +2042,7 @@ ${name}
 🎨 نوع التصميم:
 ${type}
 
-📝 التفاصيل:
+📝 تفاصيل الطلب:
 ${details}
 
 ━━━━━━━━━━━━━━
@@ -1611,21 +2050,22 @@ SAYODA DESIGN`;
 
 
             const url =
-                "https://wa.me/201041254010?text="
-                +
-                encodeURIComponent(message);
+                `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
 
             window.open(
                 url,
-                "_blank"
+                "_blank",
+                "noopener,noreferrer"
             );
 
         }
     );
 
 
-/* تشغيل Gallery */
+/* =========================================================
+   START
+========================================================= */
 
 loadImages();
 
